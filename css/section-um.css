@@ -67,7 +67,7 @@ main {
 
 .exp7orer {
     /* background-color: aqua; */
-    height: 20rem;
+    height: 24rem;
     z-index: 10;
     display: flex;
     align-items: center;
@@ -88,7 +88,7 @@ main {
 
 .exp7orer p {
     margin-top: 3rem;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 500;
     font-family: "Space Grotesk", sans-serif;
 }
@@ -176,8 +176,8 @@ main {
 
     .planeta-2 {
 
-        top: 17rem;
-        left: -13vw;
+        top: 20rem;
+        left: -16vw;
 
     }
 
@@ -189,7 +189,7 @@ main {
 
     .planeta-3 {
 
-        bottom: 25rem;
+        bottom: 29rem;
         left: 6vw;
 
     }
@@ -201,8 +201,8 @@ main {
 
     .planeta-4 {
 
-        top: 19rem;
-        left: 52vw;
+        top: 23rem;
+        left: 58vw;
 
     }
 
@@ -225,17 +225,17 @@ main {
 
 }
 
-@media (max-width: 1248px) {
+@media (max-width: 1280px) {
 
 
     .exp7orer {
-        /* background-color: aqua; */
-        height: 20rem;
+        height: 21rem;
         z-index: 10;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
+        margin-top: 3rem;
 
     }
 
@@ -251,7 +251,7 @@ main {
 
     .exp7orer p {
         margin-top: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         font-weight: 500;
     }
 
@@ -319,12 +319,14 @@ main {
 @media (max-width: 1000px) {
 
     .exp7orer {
-        height: 20rem;
+        height: 19rem;
         z-index: 10;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
+        margin-top: 0;
+        
     }
 
     .exp7orer h2 {
@@ -339,7 +341,7 @@ main {
 
     .exp7orer p {
         margin-top: 2rem;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 
@@ -501,7 +503,7 @@ main {
 
 
     .exp7orer {
-        height: 20rem;
+        height: 15rem;
         z-index: 10;
         display: flex;
         align-items: center;
@@ -521,7 +523,7 @@ main {
 
     .exp7orer p {
         margin-top: 2rem;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
@@ -578,7 +580,7 @@ main {
     .planeta-5 {
 
         left: 68vw;
-        bottom: 24rem;
+        bottom: 22rem;
 
     }
 
@@ -628,23 +630,24 @@ main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        /* background-color: #1cfed8; */
+      
+        
     }
 
     .exp7orer h2 {
-        font-size: 4rem;
+        font-size: 4.7rem;
         color: var(--rosa);
 
     }
 
     .exp7orer h3 {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
         margin-top: -0.5rem;
     }
 
     .exp7orer p {
         margin-top: 1rem;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         font-weight: 700;
     }
 

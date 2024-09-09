@@ -32,7 +32,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #00000059;
+    background-color: #000000;
     color: var(--branco);
     padding: 0.2rem;
     position: fixed;
