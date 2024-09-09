@@ -42,7 +42,7 @@ main {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url('https://seu-usuario.github.io/seu-repositorio/img/fundo_header.gif');
+    background-image: url('/img/fundo_header.gif');
     background-size: cover;
     background-position: center;
     mix-blend-mode: color-dodge;
