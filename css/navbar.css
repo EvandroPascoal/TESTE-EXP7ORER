@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+:root {
+    --roxo_escuro: #000228;
+    --branco: #fff;
+    --rosa: #CD1CFE;
+    --preto: #000;
+    --amarelo: #FFB800;
+
+}
+
+
+html {
+    font-size: 62, 5%; /*1rem = 10px*/
+}
+
+main {
+    background-color: var(--roxo_escuro);
+    height: 100dvh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #00000059;
+    color: var(--branco);
+    padding: 0.2rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    width: 30px;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.logo img {
+    height: 4rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 150px;
+    font-weight: 500;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--branco);
+    transition: 0.5s ease;
+}
+
+.links:hover {
+    color: var(--rosa);
+}
+
+.nav-list {
+    display: flex;
+
+}
+
+.pesquisa {
+    background-color: #fff;
+    width: 19rem;
+    height: 2.3rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 15px;
+}
+
+.botao-pesquisa {
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.botao-pesquisa i {
+    font-size: 1.3rem;
+}
+
+#entrada_texto {
+    height: 100%;
+    font-size: 1.5rem;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1000px) {
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000000c4;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Estilos ativos */
+
+    .navbar.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .navbar.active .nav-list a {
+        opacity: 1;
+    }
+
+    .navbar.active .hamburger {
+        /* position: fixed; */
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .navbar.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .navbar.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+
+
+}

@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+:root {
+    --roxo_escuro: #000228;
+    --branco: #fff;
+    --rosa: #CD1CFE;
+    --preto: #000;
+    --amarelo: #FFB800;
+
+}
+
+
+html {
+    font-size: 62, 5%;/*1rem = 10px*/
+}
+
+main {
+    background-color: var(--roxo_escuro);
+    height: 100%;
+}
+
+.section-um {
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--roxo_escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/fundo_header.gif');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: color-dodge;
+    z-index: 1;/* Não é necessário mais, mas mantemos caso seja preciso ajustar em camadas futuras */
+    opacity: 5; /* Opcional, para suavizar o efeito do fundo */
+}
+
+.caixa-fundo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 22;
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem;
+    backdrop-filter: blur(2px);
+    /* Adiciona um leve desfoque de fundo */
+}
+
+
+.exp7orer {
+    /* background-color: aqua; */
+    height: 20rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+.exp7orer h2 {
+    font-size: 10rem;
+    color: var(--rosa);
+}
+
+.exp7orer h3 {
+    font-size: 4rem;
+    margin-top: -1.6rem;
+}
+
+.exp7orer p {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.planeta-1 {
+    position: absolute;
+    bottom: 10rem;
+    left: clamp(-50vw, -39vw, -20vw);
+    z-index: 5;
+    /* Ficar atrás da exp7orer */
+    pointer-events: none;
+}
+
+.planeta-2 {
+    position: absolute;
+    background-color: #000228;
+    top: 17rem;
+    left: -18vw;
+    pointer-events: none;
+}
+
+.planeta-2 img {
+    mix-blend-mode: difference;
+    height: 16rem;
+    pointer-events: none;
+}
+
+.planeta-3 {
+    position: absolute;
+    bottom: 26rem;
+    left: -6vw;
+    z-index: 5;
+    /* Ficar atrás da exp7orer */
+    background-color: #000228;
+    pointer-events: none;
+}
+
+.planeta-3 img {
+    height: 8rem;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+}
+
+.planeta-4 {
+    position: absolute;
+    top: 19rem;
+    left: 42vw;
+    z-index: 5;
+    /* Ficar atrás da exp7orer */
+    background-color: #000228;
+    pointer-events: none;
+}
+
+.planeta-4 img {
+    height: 8rem;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+    pointer-events: none;
+}
+
+.planeta-5 {
+    position: absolute;
+    left: 53vw;
+    bottom: 6rem;
+    z-index: 5;
+    /* Ficar atrás da exp7orer */
+    pointer-events: none;
+}
+
+.planeta-5 img {
+    height: 22rem;
+    pointer-events: none;
+}
+
+
+@media (max-width: 1355px) {
+
+
+    .planeta-1 {
+
+        bottom: 10rem;
+        left: -30vw;
+
+    }
+
+    .planeta-2 {
+
+        top: 17rem;
+        left: -13vw;
+
+    }
+
+    .planeta-2 img {
+
+        height: 16rem;
+
+    }
+
+    .planeta-3 {
+
+        bottom: 25rem;
+        left: 6vw;
+
+    }
+
+    .planeta-3 img {
+        height: 8rem;
+
+    }
+
+    .planeta-4 {
+
+        top: 19rem;
+        left: 52vw;
+
+    }
+
+    .planeta-4 img {
+        height: 8rem;
+
+    }
+
+    .planeta-5 {
+
+        left: 58vw;
+        bottom: 13rem;
+
+    }
+
+    .planeta-5 img {
+        height: 19rem;
+
+    }
+
+}
+
+@media (max-width: 1248px) {
+
+
+    .exp7orer {
+        /* background-color: aqua; */
+        height: 20rem;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+
+    }
+
+    .exp7orer h2 {
+        font-size: 9rem;
+        color: var(--rosa);
+    }
+
+    .exp7orer h3 {
+        font-size: 3.6rem;
+        margin-top: -1.6rem;
+    }
+
+    .exp7orer p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+
+    .planeta-1 {
+
+        bottom: 10rem;
+        left: -36vw;
+
+    }
+
+    .planeta-2 {
+
+        top: 19rem;
+        left: -17vw;
+
+    }
+
+    .planeta-2 img {
+
+        height: 16rem;
+
+    }
+
+    .planeta-3 {
+
+        bottom: 25rem;
+        left: 8vw;
+
+    }
+
+    .planeta-3 img {
+        height: 8rem;
+
+    }
+
+    .planeta-4 {
+
+        top: 19rem;
+        left: 58vw;
+
+    }
+
+    .planeta-4 img {
+        height: 8rem;
+
+    }
+
+    .planeta-5 {
+
+        left: 65vw;
+        bottom: 13rem;
+
+    }
+
+    .planeta-5 img {
+        height: 19rem;
+
+    }
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .exp7orer {
+        height: 20rem;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .exp7orer h2 {
+        font-size: 8rem;
+        color: var(--rosa);
+    }
+
+    .exp7orer h3 {
+        font-size: 3.2rem;
+        margin-top: -1rem;
+    }
+
+    .exp7orer p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+
+    .planeta-1 {
+
+        bottom: 10rem;
+        left: -30vw;
+
+    }
+
+    .planeta-1 img {
+
+        height: 20rem;
+    }
+
+    .planeta-2 {
+
+        top: 25rem;
+        left: -10vw;
+
+    }
+
+    .planeta-2 img {
+
+        height: 12rem;
+
+    }
+
+    .planeta-3 {
+
+        bottom: 25rem;
+        left: 18vw;
+
+    }
+
+    .planeta-3 img {
+        height: 6rem;
+
+    }
+
+    .planeta-4 {
+
+        top: 22rem;
+        left: 60vw;
+
+    }
+
+    .planeta-4 img {
+        height: 5rem;
+
+    }
+
+    .planeta-5 {
+
+        left: 65vw;
+        bottom: 17rem;
+
+    }
+
+    .planeta-5 img {
+        height: 16rem;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+
+
+    .exp7orer {
+        height: 20rem;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .exp7orer h2 {
+        font-size: 8rem;
+        color: var(--rosa);
+    }
+
+    .exp7orer h3 {
+        font-size: 3.2rem;
+        margin-top: -1rem;
+    }
+
+    .exp7orer p {
+        margin-top: 2rem;
+    }
+
+
+    .planeta-1 {
+
+        bottom: 15rem;
+        left: -26vw;
+
+    }
+
+    .planeta-1 img {
+
+        height: 18rem;
+    }
+
+    .planeta-2 {
+
+        top: 25rem;
+        left: 3vw;
+
+    }
+
+    .planeta-2 img {
+
+        height: 10rem;
+
+    }
+
+    .planeta-3 {
+
+        bottom: 27rem;
+        left: 25vw;
+
+    }
+
+    .planeta-3 img {
+        height: 5rem;
+
+    }
+
+    .planeta-4 {
+
+        top: 24rem;
+        left: 69vw;
+
+    }
+
+    .planeta-4 img {
+        height: 4rem;
+
+    }
+
+    .planeta-5 {
+
+        left: 72vw;
+        bottom: 20rem;
+
+    }
+
+    .planeta-5 img {
+        height: 12rem;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+
+    .exp7orer {
+        height: 20rem;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .exp7orer h2 {
+        font-size: 6rem;
+        color: var(--rosa);
+    }
+
+    .exp7orer h3 {
+        font-size: 2.4rem;
+        margin-top: -1rem;
+    }
+
+    .exp7orer p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+
+    .planeta-1 {
+
+        bottom: 15rem;
+        left: -26vw;
+
+    }
+
+    .planeta-1 img {
+
+        height: 15rem;
+    }
+
+    .planeta-2 {
+
+        top: 25rem;
+        left: 5vw;
+
+    }
+
+    .planeta-2 img {
+
+        height: 8rem;
+
+    }
+
+    .planeta-3 {
+
+        bottom: 27rem;
+        left: 30vw;
+
+    }
+
+    .planeta-3 img {
+        height: 4rem;
+
+    }
+
+    .planeta-4 {
+
+        top: 34rem;
+        left: 69vw;
+
+    }
+
+    .planeta-4 img {
+        height: 3rem;
+
+    }
+
+    .planeta-5 {
+
+        left: 68vw;
+        bottom: 24rem;
+
+    }
+
+    .planeta-5 img {
+        height: 9rem;
+
+    }
+
+    .pesquisa {
+        background-color: #fff;
+        width: 12rem;
+        height: 2rem;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    h1 img {
+        height: 3rem;
+        /* display: none; */
+    }
+
+
+
+
+    #entrada_texto {
+        height: 100%;
+        font-size: 1rem;
+        width: 80%;
+
+        border: none;
+        outline: none;
+        font-weight: 500;
+    }
+
+
+}
+
+@media (max-width: 444px) {
+
+
+    .exp7orer {
+        height: 20rem;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* background-color: #1cfed8; */
+    }
+
+    .exp7orer h2 {
+        font-size: 4rem;
+        color: var(--rosa);
+
+    }
+
+    .exp7orer h3 {
+        font-size: 1.6rem;
+        margin-top: -0.5rem;
+    }
+
+    .exp7orer p {
+        margin-top: 1rem;
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+
+
+    .planeta-1 {
+
+        bottom: 15rem;
+        left: -23vw;
+
+    }
+
+    .planeta-1 img {
+
+        height: 11rem;
+    }
+
+    .planeta-2 {
+
+        top: 23rem;
+        left: 5vw;
+
+    }
+
+    .planeta-2 img {
+
+        height: 7rem;
+
+    }
+
+    .planeta-3 {
+
+        bottom: 24rem;
+        left: 30vw;
+
+    }
+
+    .planeta-3 img {
+        height: 3rem;
+
+    }
+
+    .planeta-4 {
+
+        top: 28rem;
+        left: 69vw;
+
+    }
+
+    .planeta-4 img {
+        height: 3rem;
+
+    }
+
+    .planeta-5 {
+
+        left: 74vw;
+        bottom: 18rem;
+
+    }
+
+    .planeta-5 img {
+        height: 7rem;
+
+    }
+
+}

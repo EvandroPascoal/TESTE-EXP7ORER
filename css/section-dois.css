@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.section-dois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #000228;
+ 
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 85px;
+    max-width: 90%;
+    margin: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.card:nth-child(4n) {
+    margin-top: 0px;
+}
+
+.card:nth-child(4n+1) {
+    margin-top: 20px;
+}
+
+.card:nth-child(4n+2) {
+    margin-top: 60px;
+}
+
+.card:nth-child(4n+3) {
+    margin-top: 100px;
+}
+
+.card {
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(calc(-10deg + 20deg * random()));
+    transition: transform 0.3s ease, margin-top 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    max-height: 480px;
+    height: 480px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+.card-front img {
+    height: auto;
+    max-height: 480px;
+    border-radius: 20px;
+
+
+
+}
+
+.card-back {
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    /* Rotação para o eixo X */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#textoCard {
+    resize: none;
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: "Space Grotesk", system-ui;
+    font-size: 18px;
+    padding-right: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/* Estilizando a barra de rolagem para WebKit browsers */
+#textoCard::-webkit-scrollbar {
+    width: 5px;
+    /* Largura da barra de rolagem vertical */
+}
+
+#textoCard::-webkit-scrollbar-track {
+    background: transparent;
+    /* Cor do fundo da barra de rolagem */
+}
+
+#textoCard::-webkit-scrollbar-thumb {
+    background: #666;
+    /* Cor da parte móvel da barra de rolagem */
+    border-radius: 50px;
+    /* Borda arredondada da parte móvel */
+}
+
+#textoCard::-webkit-scrollbar-thumb:hover {
+    background: #CD1CFE;
+    /* Cor da parte móvel ao passar o mouse */
+    cursor: pointer;
+}
+
+.flipped .card-inner {
+    transform: rotateY(180deg);
+    /* Faz o card virar de baixo para cima */
+}
+
+.like {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 55px;
+}
+
+.like p {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Space Grotesk", system-ui;
+    cursor: pointer;
+
+}
+
+.estrela {
+    width: 55px;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #eb0000; */
+}
+
+.estrela i {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 20px;
+}
+
+
+@media (max-width: 840px) {
+
+
+    .card-front img {
+        display: block;
+        height: auto;
+        max-height: auto;
+        width: 90vw;
+        border-radius: 20px;
+
+
+    }
+
+    .section-dois {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100vw;
+        background-color: #000228;
+        overflow-x: hidden;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 115px;
+        max-width: 100vw;
+        width: 100vw;
+        margin: 0;
+        padding-bottom: 50px;
+        padding-top: 80px;
+    }
+
+
+    .card:nth-child(4n) {
+        margin-top: 0;
+    }
+
+    .card:nth-child(4n+1) {
+        margin-top: 0;
+    }
+
+    .card:nth-child(4n+2) {
+        margin-top: 0;
+    }
+
+    .card:nth-child(4n+3) {
+        margin-top: 0;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+
+
+}
