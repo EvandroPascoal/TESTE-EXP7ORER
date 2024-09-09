@@ -19,7 +19,8 @@
 
 
 html {
-    font-size: 62, 5%; /*1rem = 10px*/
+    font-size: 62, 5%;
+    /*1rem = 10px*/
 }
 
 main {
@@ -61,9 +62,12 @@ main {
 }
 
 
+
+
 .logo img {
     height: 4rem;
     cursor: pointer;
+    margin-top: 6px;
 }
 
 ul {
@@ -126,7 +130,7 @@ ul {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1170px) {
 
     .hamburger {
         display: block;
@@ -194,5 +198,26 @@ ul {
     }
 
 
+
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        /* background-color: #FFB800; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 2.8rem;
+        cursor: pointer;
+        margin-top: 3px;
+    }
+
+    .navbar {
+        padding: 0.1px;
+    }
 
 }
